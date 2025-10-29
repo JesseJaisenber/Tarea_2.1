@@ -2,7 +2,7 @@
 Lisandro Adolfo Cantarero Giron - 20201001693
 TOPICOS ESPECIALES Y AVANZADOS-TELEDOCENCIA Tarea 2.1
 
-Proyecto de ejemplo para manejar usuarios y tareas (TODOs) con **Node.js**, **Express**, **TypeScript** y **Prisma**.
+Proyecto de ejemplo para manejar usuarios y tareas con **Node.js**, **Express**, **TypeScript** y **Prisma**.
 
 ---
 
