@@ -1,0 +1,63 @@
+######################################
+# API TODO APP - Pruebas HTTP
+######################################
+
+# ============== USUARIOS ==============
+
+### Crear un nuevo usuario
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Lisandro Cantarero",
+  "email": "lisandro.cantarero@unah.hn"
+}
+
+### Obtener todos los usuarios
+GET http://localhost:3000/users
+
+### Obtener un usuario por ID
+GET http://localhost:3000/users/1
+
+### Actualizar un usuario
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Lisandro Adolfo Cantarero",
+  "email": "lisandro.cantarero@unah.edu.hn"
+}
+
+### Eliminar un usuario
+DELETE http://localhost:3000/users/1
+
+# ============== TODOS ==============
+
+### Obtener todos los TODOs (incluye información del usuario)
+GET http://localhost:3000/todos
+
+### Obtener un TODO por ID (incluye información del usuario)
+GET http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
+
+### Crear una nueva tarea
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "Agregar método de delete",
+  "description": "Tarea para realizar en clase",
+  "completed": false,
+  "userId": 1
+}
+
+### Actualizar una tarea existente
+PUT http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
+Content-Type: application/json
+
+{
+  "description": "Tarea actualizada con nuevo contenido",
+  "completed": true
+}
+
+### Eliminar una tarea
+DELETE http://localhost:3000/todos/fedcb401-ed06-4a3b-a667-4beebac2d9b4
